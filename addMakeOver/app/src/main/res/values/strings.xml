@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Make Over</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string-array name="list_product">
+        <item>Lipmate</item>
+        <item>Eyeliner</item>
+        <item>Primer</item>
+        <item>Powder</item>
+        <item>Lipstik</item>
+
+    </string-array>
+    <string name="title_activity_menu_bottom">MenuBottom</string>
+</resources>

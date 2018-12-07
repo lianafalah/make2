@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "400150541093",
+    "firebase_url": "https://makeover-10f2b.firebaseio.com",
+    "project_id": "makeover-10f2b",
+    "storage_bucket": "makeover-10f2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400150541093:android:9a2cc64df40edd4e",
+        "android_client_info": {
+          "package_name": "com.example.addmakeover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400150541093-njdgsntadurrvpbdqri7a8p2m0tkq45r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU98nNtUjKyxF2XwGnIj-QC01iXIRGOv4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400150541093:android:66f7d744198a969f",
+        "android_client_info": {
+          "package_name": "com.example.slider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400150541093-njdgsntadurrvpbdqri7a8p2m0tkq45r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU98nNtUjKyxF2XwGnIj-QC01iXIRGOv4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

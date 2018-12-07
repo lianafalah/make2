@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/productImage"
+                android:background="@drawable/eyeliner"
+                />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/productImage"
+                android:text="MakeOver"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/productDesc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/productImage"
+                android:text="Item " />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$12"
+                android:layout_toRightOf="@+id/productDesc"
+                android:layout_below="@+id/productName"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:id="@+id/productPrice"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

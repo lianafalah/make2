@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@color/bgabuy"
+    android:elevation="9dp"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:elevation="9dp"
+        >
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:hint="Masukan Email"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Password"
+        android:id="@+id/Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Login"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:onClick="signinButtonClicked"
+        android:id="@+id/SignUpButtonC"/>
+
+        />
+    </LinearLayout>
+
+</LinearLayout>
