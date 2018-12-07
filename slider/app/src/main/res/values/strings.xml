@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Make Over</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+    <string name="menu1">Product</string>
+    <string name="logout">LogOut</string>
+    <string name="login">LogIn</string>
+    <string name="slide_1_title">Free Ongkir</string>
+    <string name="slide_1_desc">Nikmati Layanan Free Ongkir </string>
+
+    <string name="slide_2_title">DISCOUNT</string>
+    <string name="slide_2_desc">Nikmati Promo Discount</string>
+
+    <string name="slide_3_title">HOLIDAY</string>
+    <string name="slide_3_desc">Dapatkan bonus berlibur ke luar negeri</string>
+
+    <string name="slide_4_title">GUIDE</string>
+    <string name="slide_4_desc">Cari Guide Untuk Menemani Perjalananmu Agar  semakin asyik </string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="email">Email...</string>
+    <string name="password">Password...</string>
+    <string name="register">Register</string>
+    <string name="pleaseWait">Please Wait...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="addTask">Add New Task</string>
+    <string name="newTask">New Task</string>
+    <string name="prosesTask">Proses Task</string>
+    <string name="finishTask">Finish Task</string>
+    <string name="changeToProsesTask">Change to Proses</string>
+    <string name="changeToFinishTask">Change to Finish</string>
+    <string name="suaramu">Suaramu</string>
+    <string name="judulMasalah">Judul masalah...</string>
+    <string name="deskripsiMasalah">Deskripsi masalah...</string>
+    <string name="tapToSetDate">Tekan di sini untuk menentukan waktu...</string>
+    <string name="simpan">Simpan</string>
+    <string name="history">History</string>
+    <string name="Logout">Logout</string>
+    <string name="moveToHistory">Please wait while we move the task to History...</string>
+    <string name="noConnection">Please connect your phone to Internet</string>
+    <string name="emptyData">Empty Data...</string>
+</resources>
