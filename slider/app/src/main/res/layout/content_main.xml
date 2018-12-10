@@ -7,23 +7,8 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true">
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-        </android.support.design.widget.AppBarLayout>
-    </RelativeLayout>
+    <include layout="@layout/toolbar" />
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselView"
         android:layout_width="match_parent"
@@ -72,7 +57,7 @@
                             android:layout_marginLeft="10dp"
                             android:id="@+id/Lips"
                             android:layout_toRightOf="@+id/imageView"
-                            android:text="LIPS"
+                            android:text="Lips"
                             android:textStyle="bold"/>
 
                     </RelativeLayout>
@@ -80,6 +65,7 @@
 
             </LinearLayout>
     <LinearLayout
+        android:onClick="skincareClick"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -106,7 +92,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="5dp"
                     android:layout_toRightOf="@+id/imageView2"
-                    android:text="SKIN CARE"
+                    android:text="SkinCare"
                     android:id="@+id/SkinCare"
                     android:textStyle="bold"/>
 
@@ -131,6 +117,7 @@
             android:orientation="horizontal"
             >
             <LinearLayout
+                android:onClick="eyeClick"
                 android:background="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -152,7 +139,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/imageView5"
-                        android:text="EYE"
+                        android:text="Eye"
                         android:id="@+id/Eye"
                         android:textStyle="bold"/>
 
@@ -167,6 +154,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:onClick="faceClick"
                 android:background="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -187,7 +175,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@+id/imageView6"
-                        android:text="FACE"
+                        android:text="Face"
                         android:id="@+id/Face"
                         android:textStyle="bold"/>
 
@@ -212,6 +200,7 @@
             android:orientation="horizontal"
             >
             <LinearLayout
+                android:onClick="toolsClick"
                 android:background="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -248,6 +237,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:onClick="propalleteClick"
                 android:background="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -268,7 +258,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@+id/imageView4"
-                        android:text="PRO PALETE"
+                        android:text="ProPallete"
                         android:id="@+id/ProPalette"
                         android:textStyle="bold"/>
 
@@ -277,6 +267,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </android.support.constraint.ConstraintLayout>

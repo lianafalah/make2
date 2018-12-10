@@ -24,24 +24,20 @@ public class MenuActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    String item ;
+
     private static final String TAG = "## Test";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        Bundle b = getIntent().getExtras();
-        item = b.getString("parse_nama");
+
 
         mProductList = (RecyclerView)findViewById(R.id.productList);
         mProductList.setHasFixedSize(true);
         mProductList.setLayoutManager(new LinearLayoutManager(this));
-
         mDatabase = FirebaseDatabase.getInstance().getReference().child("item");
-
         mAuth=FirebaseAuth.getInstance();
-
         mAuthListener=new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -52,11 +48,19 @@ public class MenuActivity extends AppCompatActivity {
                 }
             }
         };
+
     }
     @Override
     protected void onStart() {
+        //ambilpaket
+        Intent tampilkanIntent = getIntent();
+        Bundle bukaPaket = tampilkanIntent.getExtras();
+
+        String nama = bukaPaket.getString("nama");
+        Log.d(TAG, "nama: " + nama);
         super.onStart();
-        Query Queries = mDatabase.orderByChild("item").equalTo("Lips");
+
+        Query Queries = mDatabase.orderByChild("item").equalTo(nama);
         mAuth.addAuthStateListener(mAuthListener);
         FirebaseRecyclerAdapter <Product,ProductViewHolder> FBRA = new FirebaseRecyclerAdapter<Product, ProductViewHolder>(
                 Product.class,

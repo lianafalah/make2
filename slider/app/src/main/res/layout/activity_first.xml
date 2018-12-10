@@ -49,6 +49,14 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         />
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/googleBtn"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+        </com.google.android.gms.common.SignInButton>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +67,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:textColor="#fff"
-        android:id="@+id/SignUpButtonC"
+        android:id="@+id/SignUpButtonClick"
         android:onClick="signupButtonClick"
         android:elevation="10dp"/>
 
@@ -67,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Have Account?"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="20dp"
         android:textColor="#000"/>
     <Button
@@ -81,7 +89,10 @@
         android:onClick="signinButtonClick"
         android:elevation="10dp"
         android:background="@drawable/shadow"
+
         />
+
+
     </LinearLayout>
 
 </LinearLayout>

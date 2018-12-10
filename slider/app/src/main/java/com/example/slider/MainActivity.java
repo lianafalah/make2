@@ -11,16 +11,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
-public class MainActivity extends AppCompatActivity {
-    TextView lips;
-    String var_lips;
 
+public class MainActivity extends AppCompatActivity {
+    Toolbar toolbar ;
+    TextView lips,eye,face,skincare,tools,pallete;
+
+
+
+    FirebaseAuth mAuth;
     CarouselView carouselView;
     int[] sampleImages = {R.drawable.image_1, R.drawable.image_2, R.drawable.image_3, R.drawable.image_4, R.drawable.image_5};
 
@@ -28,10 +34,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar=(Toolbar)findViewById(R.id.toolbar);
+        toolbar.setTitle("Over");
         setSupportActionBar(toolbar);
-        lips = (TextView) findViewById(R.id.Lips);
+        toolbar.setSubtitle("Make Up");
 
+        lips = (TextView) findViewById(R.id.Lips);
+        eye = (TextView) findViewById(R.id.Eye);
+        face = (TextView) findViewById(R.id.Face);
+        skincare = (TextView) findViewById(R.id.SkinCare);
+        tools = (TextView) findViewById(R.id.Tools);
+        pallete = (TextView) findViewById(R.id.ProPalette);
         carouselView = findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
         carouselView.setImageListener(imageListener);
@@ -43,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        mAuth = FirebaseAuth.getInstance();
+
+
     }
     public void onBackPressed() {
         new AlertDialog.Builder(this)
@@ -58,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 .setNegativeButton("No", null)
                 .show();
     }
+
     ImageListener imageListener = new ImageListener() {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
@@ -74,9 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -84,34 +99,83 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, MenuActivity.class));
 
         } else if (item.getItemId() == R.id.Logout) {
-            startActivity(new Intent(this, LoginActivity.class));
+            FirebaseAuth.getInstance().signOut();
         }
         return true;
     }
-    public void lipClick(View view){
-        var_lips = lips.getText().toString();
-        Intent i = null;
-        i = new Intent(MainActivity.this,MenuActivity.class);
-        Bundle b = new Bundle();
-        b.putString("parse_nama", var_lips);
-        i.putExtras(b);
-        startActivity(i);
 
-        /*
-        final TextView lip = (TextView) findViewById(R.id.lips);
-        Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-        intent.putExtra("data1", lip.getText().toString());
-        startActivity(intent);*/
+    public void lipClick(View view){
+        String nama= lips.getText().toString();
+
+        Intent myIntent = new Intent (MainActivity.this,
+                MenuActivity.class);
+        Bundle paket = new Bundle();
+        paket.putString("nama",nama);
+
+        myIntent.putExtras(paket);
+        startActivity(myIntent);
 
     }
     public void eyeClick(View view){
-        var_lips = lips.getText().toString();
-        Intent i = null;
-        i = new Intent(MainActivity.this,MenuActivity.class);
-        Bundle b = new Bundle();
-        b.putString("parse_nama", var_lips);
-        i.putExtras(b);
-        startActivity(i);
+        String nama= eye.getText().toString();
+
+        Intent myIntent = new Intent (MainActivity.this,
+                MenuActivity.class);
+        Bundle paket = new Bundle();
+        paket.putString("nama",nama);
+
+        myIntent.putExtras(paket);
+        startActivity(myIntent);
+
     }
+    public void faceClick(View view){
+        String nama= face.getText().toString();
+
+        Intent myIntent = new Intent (MainActivity.this,
+                MenuActivity.class);
+        Bundle paket = new Bundle();
+        paket.putString("nama",nama);
+
+        myIntent.putExtras(paket);
+        startActivity(myIntent);
+
+    }
+    public void skincareClick(View view){
+        String nama= skincare.getText().toString();
+
+        Intent myIntent = new Intent (MainActivity.this,
+                MenuActivity.class);
+        Bundle paket = new Bundle();
+        paket.putString("nama",nama);
+
+        myIntent.putExtras(paket);
+        startActivity(myIntent);
+
+    }
+    public void toolsClick(View view){
+        String nama= tools.getText().toString();
+
+        Intent myIntent = new Intent (MainActivity.this,
+                MenuActivity.class);
+        Bundle paket = new Bundle();
+        paket.putString("nama",nama);
+
+        myIntent.putExtras(paket);
+        startActivity(myIntent);
+
+    }
+    public void propalleteClick(View view){
+        String nama= pallete.getText().toString();
+
+        Intent myIntent = new Intent (MainActivity.this,
+                MenuActivity.class);
+        Bundle paket = new Bundle();
+        paket.putString("nama",nama);
+
+        myIntent.putExtras(paket);
+        startActivity(myIntent);
+
+    }
+
 
 }

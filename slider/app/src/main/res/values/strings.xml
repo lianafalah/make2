@@ -27,6 +27,8 @@
 
     <string name="slide_4_title">GUIDE</string>
     <string name="slide_4_desc">Cari Guide Untuk Menemani Perjalananmu Agar  semakin asyik </string>
+    <string name="facebook_app_id">294255107865033</string>
+    <string name="fb_login_protocol_scheme">fb294255107865033</string>
 
 
     <string name="prompt_email">Email</string>
